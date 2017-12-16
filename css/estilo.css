@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    /*font-family: Times,Times New Roman,serif;*/
+    background: url("../img/back.jpg") repeat center ;
+    background-repeat:repeat;
+    margin: 0 5%;
+    /*
+    background-color:grey;
+    margin:0;
+    */
+    
+    font-family:'Roboto';
+    font-style:italic;
+    font-weight:500;
+}
+header{
+    
+}
+
+h1.marca{
+    width:270px;
+    margin:20px 0;
+    color:rgba(179, 97, 227, 0.51);
+    border-left: solid;
+    border-width:4px;
+    border-color: rgba(179, 97, 227, 0.51);
+    
+    
+        
+    /*
+    margin:auto;
+    border-left:solid 4px #A661E3;
+    border-radius: 12px;
+    */
+
+}
+
+
+
+
+ul{
+    max-width: 34%;
+    /* max-width: 530px;*/
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 33%;
+    overflow: hidden;
+    background-color:#333333;
+    
+   
+    
+}
+ul li{
+    float:left;
+   
+}
+ul li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 25px 40px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #DB7093;
+}
+
+p{
+    text-align:left;  
+}
+img.primeira{
+    width:100%;
+    
+    width:600px;
+    height:600px;
+    border:20px;
+    border-color: yellow;
+    /*Float é para fazer a imagem flutuar na pagina */
+    float:right;
+    
+}
