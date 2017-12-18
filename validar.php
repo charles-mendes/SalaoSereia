@@ -27,7 +27,7 @@ if(!isset($nome)||empty($nome)){
 if(!isset($data)|| empty($data)){
     $erro[] = ' Data não preenchido';
 }
-if(!(strlen($data) == 12)){
+if(!(strlen($data) == 10)){
         $erro[] = ' Data preenchida errada';
 }else{
     $validade_data = True;
@@ -66,6 +66,7 @@ if($email != $re_email){
        var_dump($email);
        
        //adiciona no banco de dados
+       echo "<br>Cadastro válido!";
    }else{
         $erro[] = "Email invalido";
    } 
