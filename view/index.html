@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Salão de Beleza,Sereia Cabeleireiro,Corte">
         <meta name="author" content="Charles Juan da Silva Mendes">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="description" content="Salões de Beleza Sereia Cabeleireiro unisex em Pinhais">
-        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="../css/estilo.css">
         <meta name="robots" content="follow">
         <meta name="googlebot" content="follow" >
         <!-- generator indicar software que ajudou a crar pagina-->
@@ -24,27 +24,48 @@
     <body>
         <header>
             <h1 class="marca" title="Sereia Cabeleireiro">Sereia Cabeleireiro</h1>
+
+            <input type="checkbox" id="control-nav" hidden />
+            <label for="control-nav" class="control-nav">OLA TUDO BEM</label>
+            <label for="control-nav" class="control-nav-close"></label>
+
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-        <section>
-            <p>Quer saber mais sobre a opnião de nossos clientes <a href="#opniao">Clique aqui</a></p>
-            <p title="Informativo sobre o salão">Ola nosso salão é mara</p>
-            <a href="https://www.w3schools.com"> esse é o link</a>
-            <hr>
-            <figure>
-                <img  class="primeira" src="https://goo.gl/XJ6DBY"  alt="Imagem de cabelos longos" >
-                <figcaption>Tenha o melhor tratamento estético</figcaption>
+        <section id="info_meio">
+            <div id="info">
+                <p>Quer saber mais sobre a opnião de nossos clientes <a href="#opniao">Clique aqui</a></p>
+                <p title="Informativo sobre o salão">Ola nosso salão é mara</p>
+                <a href="https://www.w3schools.com"> esse é o link</a>
+                <p title="Informativo sobre o salão">Ola nosso salão é mara</p>
+                <p title="Informativo sobre o salão">Ola nosso salão é mara</p>
+                <p title="Informativo sobre o salão">Ola nosso salão é mara</p>
+                <p title="Informativo sobre o salão">Ola nosso salão é mara</p>
+            </div>
+            <figure class="vitrine">
+                <img id="img_um"src="https://goo.gl/XJ6DBY"  alt="Imagem de cabelos longos" >
+                <figcaption id="legenda_um">
+                    <p>Tenha o melhor tratamento estético</p>
+                </figcaption>
             </figure>
+            <hr>
+
         </section>
+        <!--
+
+
+
+
+
+        -->
         
-    <!--address = endereço do local -->
+
         <footer>
             <address>
               Vila: Maria Antonieta<br>
@@ -68,7 +89,7 @@
             <input type="radio" name="sexo" value="feminino">Feminino <br>
             <input type="radio" name="sexo" value="masculino">Masculino <br>
             <input type="radio" name="sexo" value="sexoOutros">Outros <br>
-            
+
             <input type="submit" value="Enviar">
         </fieldset>
         
