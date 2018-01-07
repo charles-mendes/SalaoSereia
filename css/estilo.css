@@ -1,30 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
     /*font-family: Times,Times New Roman,serif;*/
     background: url("../img/back.jpg") repeat center ;
     background-repeat:repeat;
     margin: 0 5%;
-    /*
-    background-color:grey;
-    margin:0;
-    */
-    
     font-family:'Roboto';
-    font-style:italic;
     font-weight:500;
 }
 
+
+
 h1.marca{
-    width:270px;
-    margin:20px 0;
-    color:rgba(179, 97, 227, 0.51);
+    margin: 2% 0;
+    color: rgba(179, 97, 227, 0.51);
     border-left: solid;
-    border-width:4px;
+    border-width: 4px;
     border-color: rgba(179, 97, 227, 0.51);
+    font-size: 300%;
+}
+
+
+.container_img img{
+    max-width: 100%;
+
+}
+div.container_img{
+    display: inline-block;
+    position: relative;
+}
+div#texto{
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    font-size: 200%;
+    text-align: center;
+    color: #a6e1ec;
 
 }
 
+h3#text_calendar{
+    font-size: 300%;
+}
 
 nav ul{
     /*max-width: 100%;*/
@@ -74,27 +95,49 @@ figure.vitrine{
 figure img#img_um{
     width:50%;
 }
-/*
-figure .vitrine{
-    float: right;
-    position: relative;
-    width: 30%;
-    border: thin silver solid;
-    margin: 0.5em;
-    padding: 0.5em;
-}
-figure #img_um{
-    position: absolute;
-    width: 100%;
-}
-figure #legenda_um{
-    text-align: center;
-}
-*/
-
-
 
 @media screen and (max-width: 767px){
+    div#texto{
+        top: 5%;
+        right: 40%;
+        font-size: 150%;
+    }
+    h3#text_calendar {
+        font-size: 00%;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    h1.marca{
+        width: 70%;
+        font-size: 150%;
+    }
+    div#menu_topo{
+        display: inline-block;
+        vertical-align: middle;
+        width: 49%;
+        height: 70px;
+    }
+    div#logo_site{
+        display: inline-block;
+        vertical-align: middle;
+        width: 49%;
+        height: 70px;
+    }
+
+    div#texto{
+        top: 15%;
+        right: 40%;
+        font-size: 100%;
+
+    }
+    h3#text_calendar {
+        font-size: 140%;
+    }
+
+
+
     header .control-nav {
         position: absolute;
         /**/
@@ -161,3 +204,4 @@ figure #legenda_um{
         transform: translate(0, 0);
     }
 }
+
